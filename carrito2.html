@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/productofitness.css" />
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Carrito de Compras</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+      <div class="container1 position-relative">
+        <a class="navbar-brand" href="#">MyFitLife</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Entrenamientos.html">Entrenamientos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nutricion.html">Nutricion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carrito2.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="habla_nosotro.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container pt-5">
+      <h1 class="text-center">Carrito de Compras</h1>
+
+      <div class="row">
+        <div class="col-12">
+          <h2>Seleccione los productos:</h2>
+          <select id="productos" class="form-select mb-3">
+            <option value="producto1">Proteína</option>
+            <option value="producto2">Creatina</option>
+            <option value="producto3">Omega 3</option>
+            <option value="producto4">Pre-Entreno</option>
+            <option value="producto5">Proteína vegetal</option>
+            <option value="producto6">Multivitamínicos y minerales</option>
+          </select>
+          <button onclick="seleccionarProducto()" class="btn btn-dark">
+            Seleccionar Producto
+          </button>
+        </div>
+
+      <!-- Mostrar el carrito -->
+  <div class="container mt-5">
+    <h3>Carrito de Compras</h3>
+    <ul id="carrito" class="list-group"></ul>
+    <button id="vaciarCarrito" class="btn btn-dark mt-2">Vaciar Carrito</button>
+  </div>
+    </div>
+
+    <script src="js/agregar_producto.js"></script>
+  </body>
+</html>
